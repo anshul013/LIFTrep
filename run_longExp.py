@@ -76,6 +76,7 @@ parser.add_argument('--pretrain', action='store_true', default=False)
 parser.add_argument('--freeze', action='store_true', default=False)
 parser.add_argument('--lift', action='store_true', default=False)
 parser.add_argument('--temperature', type=float, default=1.0, help='softmax temperature')
+parser.add_argument('--border_type', type=str, default=None, help='border type for the model')
 
 # DLinear
 parser.add_argument('--individual', action='store_true', default=False, help='DLinear: a linear layer for each variate(channel) individually')
