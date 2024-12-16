@@ -8,7 +8,7 @@ fi
 
 itr=1
 seq_len=336
-data=Weather
+data=weather
 model_name=PatchTST
 train_epochs=100
 pct_start=0.3
