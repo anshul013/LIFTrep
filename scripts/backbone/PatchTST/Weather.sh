@@ -12,7 +12,7 @@ data=weather
 model_name=PatchTST
 train_epochs=100
 pct_start=0.3
-for pred_len in 24 #48 96 192 336 720
+for pred_len in 336 #24 48 96 192 336 720
 do
 for learning_rate in 0.0001
 do
