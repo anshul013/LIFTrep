@@ -98,6 +98,7 @@ parser.add_argument('--kernel_size', type=int, default=25, help='decomposition-k
 parser.add_argument('--num_blocks', type=int, default=3, help='number of mixer blocks to be used in TSMixer')
 parser.add_argument('--hidden_size', type=int, default=32, help='first dense layer diminsions for mlp features block')
 parser.add_argument('--single_layer_mixer', type=str_to_bool, nargs='?', default=False, help="if true a single layer mixers are used")
+parser.add_argument('--enc_in', type=int, default=7, help='encoder input size') # DLinear with --individual, use this hyperparameter as the number of channels
 
 # Formers
 parser.add_argument('--embed_type', type=int, default=0, help='0: default 1: value embedding + temporal embedding + positional embedding 2: value embedding + temporal embedding 3: value embedding + positional embedding 4: value embedding')
