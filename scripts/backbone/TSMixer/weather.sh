@@ -23,7 +23,7 @@ python3 -u run_longExp.py \
   --num_blocks 4 \
   --is_training 1 \
   --root_path ./dataset/ \
-  --dataset $dataset.csv \
+  --dataset $dataset \
   --model_id $dataset'_'$seq_len'_'$pred_len \
   --model $model_name \
   --features M \
@@ -44,7 +44,7 @@ python3 -u run_longExp.py \
   --num_blocks 6 \
   --is_training 1 \
   --root_path ./dataset/ \
-  --dataset $dataset.csv \
+  --dataset $dataset \
   --model_id $dataset'_'$seq_len'_'$pred_len \
   --model $model_name \
   --features M \
@@ -65,7 +65,7 @@ python3 -u run_longExp.py \
   --num_blocks 4 \
   --is_training 1 \
   --root_path ./dataset/ \
-  --dataset $dataset.csv \
+  --dataset $dataset \
   --model_id $dataset'_'$seq_len'_'$pred_len \
   --model $model_name \
   --features M \
@@ -86,7 +86,7 @@ python3 -u run_longExp.py \
   --num_blocks 4 \
   --is_training 1 \
   --root_path ./dataset/ \
-  --dataset $dataset.csv \
+  --dataset $dataset \
   --model_id $dataset'_'$seq_len'_'$pred_len \
   --model $model_name \
   --features M \
