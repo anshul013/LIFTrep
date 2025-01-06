@@ -39,6 +39,7 @@ parser.add_argument('--wo_test', action='store_true', default=False, help='only 
 parser.add_argument('--only_test', action='store_true', default=False)
 parser.add_argument('--model', type=str, required=True, default='Autoformer',
                     help='model name, options: [Autoformer, Informer, Transformer]')
+parser.add_argument('--model_id', type=str, required=True, default='test', help='model id')
 parser.add_argument('--override_hyper', action='store_true', default=True, help='Override hyperparams by setting.py')
 parser.add_argument('--compile', action='store_true', default=False, help='Compile the model by Pytorch 2.0')
 parser.add_argument('--reduce_bs', type=str_to_bool, default=False, help='Override batch_size in hyperparams by setting.py')
@@ -92,6 +93,11 @@ parser.add_argument('--affine', type=int, default=0, help='RevIN-affine; True 1 
 parser.add_argument('--subtract_last', type=int, default=0, help='0: subtract mean; 1: subtract last')
 parser.add_argument('--decomposition', type=int, default=0, help='decomposition; True 1 False 0')
 parser.add_argument('--kernel_size', type=int, default=25, help='decomposition-kernel')
+
+# Mixers
+parser.add_argument('--num_blocks', type=int, default=3, help='number of mixer blocks to be used in TSMixer')
+parser.add_argument('--hidden_size', type=int, default=32, help='first dense layer diminsions for mlp features block')
+parser.add_argument('--single_layer_mixer', type=str_to_bool, nargs='?', default=False, help="if true a single layer mixers are used")
 
 # Formers
 parser.add_argument('--embed_type', type=int, default=0, help='0: default 1: value embedding + temporal embedding + positional embedding 2: value embedding + temporal embedding 3: value embedding + positional embedding 4: value embedding')
