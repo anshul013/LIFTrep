@@ -29,7 +29,7 @@ num_channels=21
 pred_len=96
 leader_num=2
 state_num=12
-learning_rate=0.005
+learning_rate=0.0001
 checkpoint_path="./checkpoints/${model_name}_${data}_${pred_len}"
 
 python -u run_longExp.py \
@@ -51,6 +51,7 @@ python -u run_longExp.py \
     --temperature $tau \
     --pretrain \
     --freeze \
+    --des 'Exp' \
     --learning_rate $learning_rate \
     > logs/Lead/$model_name'_pretrain_'$data'_'$pred_len'_K'$leader_num'_tau'$tau'_state'$state_num'_lr'$learning_rate.log 2>&1
 
@@ -58,7 +59,7 @@ python -u run_longExp.py \
 pred_len=192
 leader_num=2
 state_num=16
-learning_rate=0.005
+learning_rate=0.0001
 checkpoint_path="./checkpoints/${model_name}_${data}_${pred_len}"
     
 python -u run_longExp.py \
@@ -80,6 +81,7 @@ python -u run_longExp.py \
     --temperature $tau \
     --pretrain \
     --freeze \
+    --des 'Exp' \
     --learning_rate $learning_rate \
     > logs/Lead/$model_name'_pretrain_'$data'_'$pred_len'_K'$leader_num'_tau'$tau'_state'$state_num'_lr'$learning_rate.log 2>&1
 
@@ -87,7 +89,7 @@ python -u run_longExp.py \
 pred_len=336
 leader_num=4
 state_num=16
-learning_rate=0.001
+learning_rate=0.0001
 checkpoint_path="./checkpoints/${model_name}_${data}_${pred_len}"
 
 python -u run_longExp.py \
@@ -109,6 +111,7 @@ python -u run_longExp.py \
     --temperature $tau \
     --pretrain \
     --freeze \
+    --des 'Exp' \
     --learning_rate $learning_rate \
     > logs/Lead/$model_name'_pretrain_'$data'_'$pred_len'_K'$leader_num'_tau'$tau'_state'$state_num'_lr'$learning_rate.log 2>&1
 
@@ -116,7 +119,7 @@ python -u run_longExp.py \
 pred_len=720
 leader_num=2
 state_num=8
-learning_rate=0.001
+learning_rate=0.0001
 checkpoint_path="./checkpoints/${model_name}_${data}_${pred_len}"
 
 python -u run_longExp.py \
@@ -138,5 +141,6 @@ python -u run_longExp.py \
     --temperature $tau \
     --pretrain \
     --freeze \
+    --des 'Exp' \
     --learning_rate $learning_rate \
     > logs/Lead/$model_name'_pretrain_'$data'_'$pred_len'_K'$leader_num'_tau'$tau'_state'$state_num'_lr'$learning_rate.log 2>&1
