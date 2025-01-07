@@ -39,6 +39,7 @@ python -u run_longExp.py \
     --num_blocks 4 \
     --dataset $data \
     --model $model_name \
+    --model_id "${data}_${seq_len}_${pred_len}" \
     --lift \
     --seq_len $seq_len \
     --pred_len $pred_len \
@@ -67,6 +68,7 @@ python -u run_longExp.py \
     --num_blocks 6 \
     --dataset $data \
     --model $model_name \
+    --model_id "${data}_${seq_len}_${pred_len}" \
     --lift \
     --seq_len $seq_len \
     --pred_len $pred_len \
@@ -95,6 +97,7 @@ python -u run_longExp.py \
     --num_blocks 4 \
     --dataset $data \
     --model $model_name \
+    --model_id "${data}_${seq_len}_${pred_len}" \
     --lift \
     --seq_len $seq_len \
     --pred_len $pred_len \
@@ -123,6 +126,7 @@ python -u run_longExp.py \
     --num_blocks 4 \
     --dataset $data \
     --model $model_name \
+    --model_id "${data}_${seq_len}_${pred_len}" \
     --lift \
     --seq_len $seq_len \
     --pred_len $pred_len \
